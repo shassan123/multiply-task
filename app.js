@@ -38,7 +38,7 @@ let number = prompt("Enter an integer: ");
 let start = prompt("From where you start to multiply:");
 let range = prompt("How Long you want to multiply: ");
 
-for (let i = start; i <= range; i++) {
+for (let i = +start; i <= +range; i++) {
   let result = i * number;
   console.log(number +  " x " + i +  " = " + result);
 }
